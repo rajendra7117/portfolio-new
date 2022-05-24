@@ -1,0 +1,67 @@
+.contacts{
+    width: 100%;
+    height: 44rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+.contact-types{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+
+
+}
+
+.crabImg{
+    position: absolute;
+    bottom: 0;
+    
+    right: 100vw;
+   
+}
+.crabImg.active{
+    animation: crab 15s ease-in-out;
+}
+@media screen and (max-width: 900px) {
+    .contacts{
+        height: 60rem;
+    }
+   .contact-types{
+      display: grid;
+      height: 50rem;
+      gap: 1rem;
+      align-items: center;
+      grid-template-columns: repeat(3, 1fr);
+   }
+}
+
+@media screen and (max-width: 560px) {
+    .contacts{
+        height: 100rem;
+        align-items:  flex-start;
+        justify-content: flex-start;
+ 
+    }
+    .contacts h1{
+        align-self: center;
+    }
+    
+    .contact-types{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@keyframes crab {
+    0%{
+        right: 3rem;
+    }
+    100%{
+        right: 100vw;
+    }
+}

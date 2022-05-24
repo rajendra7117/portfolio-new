@@ -1,0 +1,257 @@
+.projects{
+    width: 100%;
+    height: 45rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem;
+    margin-top: 15rem;
+    margin-bottom: 5rem;
+ 
+  
+}
+.projects-div{
+   
+    width: 100%;
+
+    position: relative;
+    height: 35rem;
+    margin-bottom: 3rem;
+    margin-top: 5rem;
+ 
+}
+.card{
+    display: none;
+    
+}
+.projects h1{
+    position: absolute;
+    top: 5rem;
+    left: 2rem;
+}
+
+.card.left{
+    display: block;
+    position: absolute;
+    top: 6rem;
+    left: -45vw;
+    animation: i-left 1s ease-in  !important;
+  
+    
+  
+    
+}
+
+.card.from-left{
+  
+    animation: to-left 0.5s ease-in !important;
+}
+.card.center{
+    display: block;
+    position: absolute;
+   
+   
+}
+.card.center.from-left{
+    right: 25vw;
+    animation: left 0.8s ease-in !important;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    
+}
+
+.card.center.from-right{
+    left: 20vw;
+    animation: right 0.5s ease-in !important;
+}
+.card.right{
+    display: block;
+    position: absolute;
+    right: -40vw;
+    top: 6rem;
+    animation: initial-right 0.5s ease-in;
+   
+  
+    
+}
+.card.from-right{
+    animation: to-right 0.5s ease-in;
+}
+.controls{
+    align-self: center;
+    width: 10rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.controls svg{
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 850px) {
+    .projects{
+        padding: 0;
+        
+    }
+    .projects-div{
+        margin-top: 8rem;
+    }
+    .card{
+        width: 600px;
+    }
+    .card.center.from-left{
+        right: 15vw;
+    }
+   
+    .card.center.from-right{
+        left: 10vw;
+    }
+    .card.left{
+        left: -65vw;
+        animation: responsive-left 0.9s ease-in !important;
+    }
+    .card.right{
+        right: -60vw;
+    }
+    .controls{
+        align-self: center;
+        width: 15rem;
+        justify-content: space-around;
+    }
+    .controls svg{
+        margin-left: 1rem;
+    }
+   
+
+}
+@media screen and (max-width: 560px) {
+    
+
+    .card{
+        width: 280px !important;
+        border-radius: 0.3rem !important;
+    }
+    .projects-div{
+        margin-top: 8rem;
+        height: 26rem;
+        margin-bottom: 0;
+    }
+    .card.center.from-left{
+        right: 12vw ;
+    }
+    .card.center.from-right{
+        left: 12vw  ;
+    }
+    .card.left{
+        left: -75vw ;
+        animation: responsive-left 0.9s ease-in !important;
+        transform: rotate(-20deg);
+        
+    }
+    .card.right{
+        right: -75vw ;
+        transform: rotate(20deg);
+       
+       
+    }
+    .controls{
+        width: 10rem;
+        margin-inline: auto;
+    }
+    .controls svg{
+        font-size: 2rem;
+        margin: 0;
+    }
+}
+
+@keyframes left {
+    0%{
+        top: 6rem;
+        right: -40vw
+    }
+    100%{
+        top: 0;
+        right: 25vw;
+        
+    }
+}
+
+@keyframes right {
+    0%{
+        top: 6rem;
+        left: -45vw;
+    }
+    100%{
+        top: 0;
+        left: 25%;
+    }
+}
+
+@keyframes to-left {
+    0%{
+        top: 0;
+        left: 25vw;
+    }
+    100%{
+        top: 6rem;
+        left: -45vw;
+    }
+}
+@keyframes to-right {
+   0% {
+        top:0;
+        right: 25vw;
+
+    }
+    100%{
+        top: 6rem;
+        right: -40vw;
+    }
+}
+
+
+
+@keyframes initial-right {
+    0%{
+        top: 6rem;
+        right: -100vw;
+    }
+    100%{
+        top: 6rem;
+        right: -45vw;
+    }
+}
+
+@keyframes i-left {
+    0%{
+        top: 6rem !important;
+        left: -100vw;
+    }
+    100%{
+        top: 6rem;
+        left: -45vw;
+    }
+}
+
+@keyframes responsive-left {
+    0%{
+        top: 6rem;
+        left: -100vw;
+    }
+    100%{
+        top: 6rem;
+        left: -65vw;
+        
+    }
+}
+@keyframes responsive-from-right {
+    0%{
+        top: 6rem;
+        right: -60vw;
+    }
+    100%{
+        top: 0;
+        right: 20rem;
+       
+    }
+}

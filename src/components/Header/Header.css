@@ -1,0 +1,118 @@
+.top{
+    width: 100vw;
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: rgb(0, 0, 0);
+  }
+.top.darkTheme{
+  background-color: rgb(1, 1, 7) ;
+  color: #fff;
+}
+  .sun-img{
+    position: absolute;
+    left: 2rem;
+    top: 1.4rem;
+    cursor: pointer;
+   
+  
+  }
+ 
+  .top a{
+    color: #000;
+    text-decoration: none;
+  }
+  .resume{
+      padding: 0.5rem;
+      border: 2px solid rgb(1, 19, 25);
+      border-radius: 0.2rem;
+      z-index: 2;
+      
+     
+  }
+  .moon-star{
+    font-size: 4.5rem;
+  }
+  .top.darkTheme .resume{
+    border: 1px solid #fff;
+    color: #fff;
+  }
+  .dark-theme-container{
+    position: absolute;
+    right: 8rem;
+    top: 5rem;
+    width: 10rem;
+    height: 12rem;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  }
+ 
+  .top.darkTheme .dark-theme-container{
+    color: #000000;
+  }
+  .dark-theme-container span svg{
+    font-size: 2rem;
+  }
+  .dark-theme-container span:nth-child(2) svg{
+    font-size: 3rem;
+  }
+
+  .light{
+    cursor: pointer;
+  }
+  .darkIcon{
+    cursor: pointer;
+  }
+  .arrow.light-theme{
+
+    transform: rotate(360deg);
+
+    transition: all 0.5s ease-in-out;
+  }
+  .arrow.dark-theme{
+      transform: rotate(180deg);
+
+      transition: all 0.5s ease-in-out;
+  }
+
+  
+  
+
+
+
+
+  @keyframes arrowRotate {
+    0%{
+      transform: rotate(0deg);
+    }
+   
+    100%{
+      transform: rotate(180deg);
+    }
+  }
+
+
+
+
+  @media screen and (max-width: 560px) {
+    .dark-theme-container{
+      top: 1rem;
+      right: 1rem;
+      height: 8rem;
+      border-radius: 0.5rem;
+      width: 3rem;
+    }
+    .dark-theme-container span svg{
+      font-size: 1.3rem;
+    }
+    .dark-theme-container .arrow{
+      font-size: 1.3rem;
+    }
+  }

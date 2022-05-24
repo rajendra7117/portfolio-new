@@ -1,0 +1,96 @@
+.certificates{
+    width: 100%;
+    position: relative;
+    height: auto;
+    display: flex;
+   flex-direction: column;
+}
+.sliderContainer{
+    width: 100%;
+    position: relative;
+}
+.certificatesContainer{
+    width: 100%;
+    display: flex;
+   
+    margin: 0 auto;
+    gap: 1rem;
+
+    height: 20rem;
+
+    transition: transform 1s ease-in-out;
+    
+   
+    
+}
+:root{
+--max-width: 100%;
+}
+
+.certificatesContainer::-webkit-scrollbar {
+    display: none;
+}
+.certificate{
+     flex: 0 0 30%;
+     height: 20rem;
+    border-radius: 0.5rem;
+    background-color: #ffffff ;
+   
+  
+}
+
+.certificate img{
+     height: 20rem;
+   width: 100%;
+    border-radius: 0.5rem;
+}
+.certificates button{
+    position: absolute;
+    height: 10rem;
+    background-color: rgba(9, 127, 166, 0.044);
+    border: none;
+  top: 9rem;
+  display: none;
+    cursor: pointer;
+    color: #000000;
+    border-radius: 0.5rem;
+}
+
+
+.certificates button svg{
+    font-size: 3rem;
+}
+
+.left{
+    left: 1rem;
+}
+
+.right{
+    right: 1rem;
+}
+.left.active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.right.active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 1000px) {
+    .certificate{
+        --items-per-screen: 2;
+        flex: 0 0 46%;
+        margin-left: 0.6rem;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .certificate{
+        flex: 0 0 95%;
+        margin: 0;
+    }
+}

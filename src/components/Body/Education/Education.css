@@ -1,0 +1,260 @@
+.education-container{
+    width: 100%;
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 0.4rem;
+    margin-top: 5rem;
+   position: relative;
+ 
+}
+.education-box{
+    width: 70%;
+    height: 30rem;
+    background-color: rgb(9, 127, 166);
+    border-radius: 0.4rem;
+    z-index: 100;
+    box-shadow: rgba(10, 210, 241, 0.35) 0px 5px 15px;
+    
+}
+.jellyFish{
+    width: 3rem; 
+    position: absolute;
+    z-index: 0;
+    
+      
+}
+.jellyFish.active{
+    animation: jelly 10s ease-in-out 0s 1;
+}
+.scroll-div{
+    width: 100%;
+    background-color: rgb(9, 127, 166);
+    height: 3rem;
+    border-radius: 0.4rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+
+ 
+ 
+}
+.scroll-div span{
+    width: 7rem;
+    padding: 0.5rem;
+    height: 2rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+   
+    cursor: pointer;
+   
+}
+.scroll-div span.active{
+    border: none;
+    opacity: 1.5;
+    
+    color: rgb(9, 127, 166);
+    font-weight: 700;
+    z-index: 100;
+ 
+}
+.slider{
+    position: absolute;
+    background-color: #fff;
+    left: 5%;
+    width: 16rem !important;
+   
+   border-radius: 0.4rem;
+
+  
+
+
+}
+
+.slider.school-inter{
+    left: 37%;
+    animation: s-i 0.5s ease-in;
+}
+.slider.inter-school{
+    left: 5%;
+    animation: i-s 0.5s ease-in;
+}
+.slider.school-grad{
+    left: 70%;
+    animation: s-g 0.5s ease-in ;
+}
+.slider.grad-school{
+    left: 5%;
+    animation: g-s 0.5s ease-in;
+}
+.slider.inter-grad{
+    left: 70%;
+    animation: i-g 0.5s ease-in !important;
+}
+.slider.grad-inter{
+    left: 37%;
+    animation: g-i 0.5s ease-in;
+}
+.education-type{
+    width: 100%;
+}
+
+
+.education-scroll{
+    width: 100%;
+    height: 27rem;
+    background-color: rgb(9, 127, 166);
+    overflow-y: hidden;
+    color: #fff;
+    position: relative;
+    border-radius: 0.4rem;
+}
+.education-scroll div{
+    width: 100%;
+    height: 100%;
+}
+@keyframes s-i {
+    0%{
+        left:5%;
+    }
+    100%{
+        left: 37%;
+    }
+}
+
+@keyframes i-s {
+    0%{
+        left: 37%;
+    }
+    100%{
+        left: 5%;
+    }
+}
+
+@keyframes g-i {
+    0%{
+        left: 70%;
+    }
+    100%{
+     left: 37%;
+    }
+}
+
+@keyframes s-g {
+    0%{
+        left: 5%;
+    }
+    100%{
+        left: 70%;
+    }
+}
+
+@keyframes g-s {
+    0%{
+        left: 70%;
+    }
+    100%{
+     left: 5%;
+    }
+}
+@keyframes i-g {
+    0%{
+        left: 40%;
+    }
+    100%{
+        left: 70%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .slider{
+        width: 9.1rem !important;
+    }
+}
+@media screen and (max-width: 560px) {
+    .education-box{
+        width: 100%;
+    }
+    .slider{
+        left: 0;
+        width: 5.8rem !important;
+    }
+
+    .slider.school-inter{
+        left: 34%;
+        animation: s-i 0.5s ease-in;
+        width: 7rem !important;
+    }
+    .slider.inter-school{
+        left: 0% ;
+        animation: i-s 0.5s ease-in;
+        width: 5.8rem !important;
+    }
+    .slider.inter-grad{
+        left: 70%;
+        animation: i-g 0.5s ease-in !important;
+        width: 7rem !important;
+    }
+    .slider.grad-inter{
+        left: 34%;
+        animation: g-i 0.5s ease-in;
+        width: 7rem !important;
+    }
+    .slider.grad-school{
+        left: 0%;
+        width: 5.8rem !important;
+        animation: g-s 0.5s ease-in;
+    }
+    @keyframes s-i {
+        0%{
+            left: 0%;
+        }
+        100%{
+            left: 34%;
+        }
+    }
+
+    @keyframes i-s {
+        0%{
+            left: 34%;
+        }
+        100%{
+            left: 0 ;
+        }
+    }
+    @keyframes s-g {
+        0%{
+            left: 34%;
+        }
+        100%{
+            left: 70%;
+        }
+    }
+    @keyframes g-s {
+        0%{
+            left: 70%;
+        }
+        100%{
+            left: 0%;
+        }
+    }
+}
+
+
+@keyframes jelly {
+    0%{
+        top: 100%;
+        left: 0 ;
+    }
+    100%{
+        top: 1rem;
+        left: 100%;
+    }
+}

@@ -1,0 +1,294 @@
+
+.body{
+    height: auto !important;
+    width: 100vw;
+    background: rgb(9,197,223);
+    background: linear-gradient(355deg, rgba(9,197,223,1) 94%, rgba(253,226,45,0.8438725832129726) 100%);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    transition: wave 0.2s;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .body.dark{
+    background: rgb(5,6,17);
+background: linear-gradient(229deg, rgba(5,6,17,1) 23%, rgba(19,212,226,1) 98%);
+    color: #ffffff;
+  }
+  .wave{
+  
+    position: absolute;
+    top: -14rem;
+    left: 0;
+    width: 100% !important;
+  
+    
+  }
+  .wave svg{
+    
+    width: 100%;
+  }
+  .container{
+    width: 100%;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+   
+  }
+  .container .fish1:nth-child(1){
+    width: 65px;
+    position: absolute;
+    top: 0;
+    animation: fish1 10s infinite;
+  }
+  .container .fish2:nth-child(2){
+    width: 65px;
+    position: absolute;
+    top: 2rem;
+    transform: rotateY(180deg);
+    animation: fish2 10s infinite;
+  
+  }
+  .container2{
+    width: 100%;
+    
+    height: auto;
+    position: relative;
+    margin-top: 10rem;
+   
+  }
+  .container2 img:nth-child(1){
+    width: 65px;
+    position: absolute;
+    top: 0;
+    animation: fish1 10s infinite;
+  }
+  .container2 img:nth-child(2){
+    width: 65px;
+    position: absolute;
+    top: 2rem;
+    transform: rotateY(180deg);
+    animation: fish2 10s infinite;
+  }
+  .container3{
+    width: 100%;
+    height: 40rem;
+    position: relative;
+  }
+
+  .container3>img{
+    position: absolute;
+    top: 0;
+    right: 2rem;
+    z-index: 2;
+    
+    
+    
+    
+   
+  
+  }
+  
+  .container3 span{
+    position: absolute !important;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: rgb(176,231,252);
+    border-radius: 50%;
+    top: 1rem;
+    right: 15%;
+   
+  }
+  .container3 span:nth-child(3){
+  
+    top: 1rem;
+    right: 15%;
+    animation: bubble1 3s ease-in-out  infinite !important;
+  }
+  .container3 span:nth-child(4){
+    top: 1rem;
+    right: 14%;
+    animation: bubble2 3s ease-in-out  infinite !important;
+  }
+  
+  .container3 span:nth-child(2){
+    top: 1rem;
+    right: 14%;
+    animation: bubble2 3s ease-in-out 1s infinite normal;
+  }
+  .container3 span:nth-child(5){
+    top: 1rem;
+    right: 16%;
+    animation: bubble1 3s ease-in-out 1s infinite normal;
+  }
+
+  .container4{
+    width: 100%;
+    height: auto;
+  }
+
+  .container5{
+    width: 100%;
+    height: auto;
+  }
+  .container6{
+    width: 100%;
+    height: auto;
+  }
+ 
+  @keyframes fish1 {
+    0%{
+      left: 0;
+    }
+    100%{
+  left: 100%;
+    }
+  }
+  @keyframes fish2 {
+    0%{
+      right: 0;
+    }
+    100%{
+      right: 100%;
+    }
+  }
+
+ @keyframes bubble1 {
+   0%{
+     top: 6rem;
+     right: 15%;
+   }
+   100%{
+     top: 1rem;
+     right: 15%;
+   }
+ }
+ 
+ @keyframes bubble2 {
+  0%{
+    top: 10rem;
+    right: 14%;
+  }
+  100%{
+    top: 1rem;
+    right: 14%;
+  }
+}
+
+
+@media screen and (max-width: 850px) {
+
+  .container3 span{
+    position: absolute !important;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: rgb(176,231,252);
+    border-radius: 50%;
+    top: 1rem;
+    right: 25%;
+    animation: bubble2 3s ease-in-out infinite ;
+   
+  }
+  .container3 span:nth-child(3){
+  
+    top: 1rem;
+    right: 26% !important;
+    animation: bubble1 3s ease-in-out  infinite !important;
+  }
+  .container3 span:nth-child(4){
+    top: 1rem;
+    right: 25% !important;
+    animation: bubble2 3s ease-in-out  infinite !important;
+  }
+  
+  .container3 span:nth-child(2){
+    top: 1rem;
+    right: 25% !important;
+    animation: bubble2 3s ease-in-out 1s infinite normal !important;
+  }
+  .container3 span:nth-child(5){
+    top: 1rem;
+    right: 26% !important;
+    animation: bubble1 3s ease-in-out 1s infinite normal !important;
+  }
+  @keyframes bubble1 {
+    0%{
+      top: 6rem;
+      right: 26%;
+    }
+    100%{
+      top: 1rem;
+      right:26%;
+    }
+  }
+
+  @keyframes bubble2 {
+    0%{
+      top: 10rem;
+      right: 25%;
+    }
+    100%{
+      top: 1rem;
+      right: 25%;
+    }
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .container3 span{
+    position: absolute !important;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: rgb(176,231,252);
+    border-radius: 50%;
+    top: 1rem;
+    right: 35%;
+    animation: bubble2 3s ease-in-out infinite ;
+   
+  }
+  .container3 span:nth-child(3){
+  
+    top: 1rem;
+    right: 50% !important;
+    animation: bubble1 3s ease-in-out  infinite !important;
+  }
+  .container3 span:nth-child(4){
+    top: 1rem;
+    right: 50% !important;
+    animation: bubble2 3s ease-in-out  infinite !important;
+  }
+  
+  .container3 span:nth-child(2){
+    top: 1rem;
+    right: 52% !important;
+    animation: bubble2 3s ease-in-out 1s infinite normal !important;
+  }
+  .container3 span:nth-child(5){
+    top: 1rem;
+    right: 52% !important;
+    animation: bubble1 3s ease-in-out 1s infinite normal !important;
+  }
+  @keyframes bubble1 {
+    0%{
+      top: 6rem;
+      right: 52%;
+    }
+    100%{
+      top: 1rem;
+      right:52%;
+    }
+  }
+
+  @keyframes bubble2 {
+    0%{
+      top: 10rem;
+      right: 50%;
+    }
+    100%{
+      top: 1rem;
+      right: 50%;
+    }
+  }
+}
