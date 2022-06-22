@@ -22,7 +22,7 @@ const ProjectCard = ({ name, url, desc, img }) => {
       onMouseLeave={toggleDetails}
     >
       <div className="image">
-        <img src={img} />
+        <img src={img} alt="Project-snap"/>
       </div>
       {size > 560 ? (
         <>

@@ -22,7 +22,7 @@ const Experience = () => {
             <img src={workGif} />
           </div>
           <div className="part2">
-            <h4>System Administrator</h4>
+            <h4>Associate Technical Engineer</h4>
             <h5>IBM {`(2020-2021)`}</h5>
             <p>Front end development with React</p>
           </div>

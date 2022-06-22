@@ -1,15 +1,15 @@
 import React, {useState} from "react";
 import "./Header.css";
 import sun from "../../images/sun.png";
-import moon from '../../images/moon.png'
-import {BsFillBrightnessHighFill, BsFillMoonFill, BsMoonStarsFill} from 'react-icons/bs'
+
+import {BsFillBrightnessHighFill, BsFillMoonFill} from 'react-icons/bs'
 import {CgArrowLongUpC} from 'react-icons/cg'
 import { useSelector, useDispatch} from "react-redux";
 import { themeSliceActions } from "../../store/ThemeSlice";
 
 const Header = () => {
 
-  const [theme, setTheme] = useState('')
+  const [theme, setTheme] = useState('light-theme')
 
   const selectedTheme = useSelector((state) => state.theme.theme)
   const dispatch = useDispatch()
