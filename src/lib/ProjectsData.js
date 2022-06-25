@@ -7,6 +7,9 @@ import moviesImg from '../images/Movie-app1.PNG'
 import pokedexImg from '../images/pokedex.PNG'
 import foodAppImg from '../images/food-app.PNG'
 import jobImg from '../images/application-form.PNG'
+import taskImg from '../images/task-app-drag.PNG'
+import commentsImg from '../images/comments-section.PNG'
+import jobListingImg from '../images/job-listing-app.PNG'
 
 export const projectData = [
     {project: 'Space Tourism',
@@ -52,6 +55,21 @@ desc: 'build using React, Redux, Router, Firebase auth',
     img: jobImg,
     url:   "https://job-application-form-9f0f1.web.app/",
     desc: 'build using React, Redux, Router',    
+},
+{project: 'Task App With Drag and Drop',
+    img: taskImg,
+    url:   "https://629df46c1c398420569f6ff9--task-app-react18.netlify.app/",
+    desc: 'build using React, Redux',    
+},
+{project: 'Interactive Comments Section',
+    img: commentsImg,
+    url:   "https://628bd2c0f263be00b0d89362--react-interactive-comments-section.netlify.app/",
+    desc: 'build using React, Redux',    
+},
+{project: 'Job Listing App',
+    img: jobListingImg,
+    url:   "https://629f71366fc4ba22a3a0cdc2--joblistings-react.netlify.app/",
+    desc: 'build using React, Redux',    
 }
 
 ]

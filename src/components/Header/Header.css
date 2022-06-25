@@ -11,11 +11,11 @@
   background-color: rgb(1, 1, 7) ;
   color: #fff;
 }
-  .sun-img{
+  .theme-img{
     position: absolute;
     left: 2rem;
     top: 1.4rem;
-    cursor: pointer;
+  
    
   
   }
@@ -70,13 +70,13 @@
   .darkIcon{
     cursor: pointer;
   }
-  .arrow.light-theme{
+  .arrow.light{
 
     transform: rotate(360deg);
 
     transition: all 0.5s ease-in-out;
   }
-  .arrow.dark-theme{
+  .arrow.dark{
       transform: rotate(180deg);
 
       transition: all 0.5s ease-in-out;

@@ -8,10 +8,10 @@ import { useSelector, useDispatch} from "react-redux";
 import { themeSliceActions } from "../../store/ThemeSlice";
 
 const Header = () => {
-
-  const [theme, setTheme] = useState('light-theme')
-
   const selectedTheme = useSelector((state) => state.theme.theme)
+  const [theme, setTheme] = useState(selectedTheme)
+
+
   const dispatch = useDispatch()
   console.log(selectedTheme)
 
@@ -27,7 +27,7 @@ const Header = () => {
   return (
     <div className={`top ${selectedTheme==='dark' ? 'darkTheme' : ''}`}>
       <div>
-        <div className="sun-img">
+        <div className="theme-img">
          {selectedTheme==='dark' ? (<BsFillMoonFill className="moon-star"/>) : ( <img src={sun} />)}
 
 
@@ -40,7 +40,7 @@ const Header = () => {
       </div>
       <div className="dark-theme-container">
       <span className="light" onClick={setLightTheme}>{<BsFillBrightnessHighFill />}</span>
-      <span className={`arrow ${theme}`}><CgArrowLongUpC /></span>
+      <span className={`arrow ${selectedTheme}`}><CgArrowLongUpC /></span>
       <span className="darkIcon" onClick={setDarkTheme}>{<BsFillMoonFill />}</span>
       </div>
     </div>

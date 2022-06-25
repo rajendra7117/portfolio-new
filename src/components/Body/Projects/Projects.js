@@ -30,8 +30,8 @@ const Projects = () => {
       setNext(1);
     } else {
       setCurrentIndex((prev) => prev + 1);
-      setPrevious((prev) => prev + 1);
-      setNext((prev) => prev + 1);
+      setPrevious((prev) => currentIndex-1);
+      setNext((prev) => currentIndex+1);
     }
   };
   useEffect(() => {
@@ -55,9 +55,12 @@ const Projects = () => {
     if (previous >= projectData.length) {
       setPrevious(0);
     }
+    if(currentIndex===next){
+      setNext(currentIndex+1)
+    }
   }, [currentIndex, previous, next]);
 
-
+console.log(previous, currentIndex, next)
   return (
     <div className="projects">
       <h1>My Projects</h1>
